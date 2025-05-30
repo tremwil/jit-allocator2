@@ -5,7 +5,7 @@ Maintained fork of [jit-allocator](https://github.com/playXE/jit-allocator). If 
 A simple memory allocator for executable code. Use `JitAllocator` type to allocate/release memory and `virtual_memory` module functions to enable proper access for executable code. So if you want to allocate a new code to execute it is usually done like this:
 
 ```rust
-use jit_allocator::*;
+use jit_allocator2::*;
 let compiled_code = ...;
 let compiled_code_size = ...;
 
