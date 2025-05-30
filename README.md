@@ -1,4 +1,6 @@
-# jit-allocator
+# jit-allocator2
+
+Maintained fork of [jit-allocator](https://github.com/playXE/jit-allocator).
 
 A simple memory allocator for executable code. Use `JitAllocator` type to allocate/release memory and `virtual_memory` module functions to enable proper access for executable code. So if you want to allocate a new code to execute it is usually done like this:
 
