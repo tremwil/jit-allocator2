@@ -1,13 +1,14 @@
 [package]
-name = "jit-allocator"
-version = "0.2.8"
+name = "jit-allocator2"
+version = "0.2.9"
 edition = "2021"
 license = "MIT"
-description = "An executable code allocator"
-repository = "https://github.com/playxe/jit-allocator"
+description = "An executable code allocator. Fork for jit-allocator"
+repository = "https://github.com/tremwil/jit-allocator2"
 readme = "README.md"
-documentation = "https://docs.rs/jit-allocator"
+documentation = "https://docs.rs/jit-allocator2"
 keywords = ["jit", "allocator", "executable", "code", "memory"]
+categories = ["no-std"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

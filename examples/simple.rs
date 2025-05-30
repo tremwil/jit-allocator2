@@ -1,6 +1,6 @@
 
 
-use jit_allocator::{allocator::JitAllocator, virtual_memory::{protect_jit_memory, ProtectJitAccess, flush_instruction_cache}};
+use jit_allocator2::{allocator::JitAllocator, virtual_memory::{protect_jit_memory, ProtectJitAccess, flush_instruction_cache}};
 use macroassembler::{assembler::*, jit::gpr_info::{ARGUMENT_GPR1, ARGUMENT_GPR0, RETURN_VALUE_GPR}};
 
 fn main() {
@@ -35,6 +35,6 @@ fn main() {
 
     unsafe { alloc.release(rx).unwrap(); }
 
-    unsafe { alloc.reset(jit_allocator::allocator::ResetPolicy::Hard); }
+    unsafe { alloc.reset(jit_allocator2::allocator::ResetPolicy::Hard); }
 }
 
